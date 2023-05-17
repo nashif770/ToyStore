@@ -22,7 +22,7 @@ const Register = () => {
         setTimeout(()=>{
             userUpdate(name, photo)
             .then(()=>{
-                // console.log('User Profile has been Updated')
+                console.log('User Profile has been Updated')
             })
             .catch(error =>{
                 console.log(error)
