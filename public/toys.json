@@ -1,0 +1,170 @@
+[
+  {
+    "Picture": "tactical-marine.jpg",
+    "Race": "Space Marines",
+    "Name": "Tactical Marine Squad",
+    "Category": "Brawler",
+    "Price": 100,
+    "Rating": 4.3
+  },
+  {
+    "Picture": "devastator-marine.jpg",
+    "Race": "Space Marines",
+    "Name": "Devastator Squad",
+    "Category": "Long Range",
+    "Price": 150,
+    "Rating": 4.5
+  },
+  {
+    "Picture": "assault-marine.jpg",
+    "Race": "Space Marines",
+    "Name": "Assault Marine Squad",
+    "Category": "Assassin",
+    "Price": 120,
+    "Rating": 4.1
+  },
+  {
+    "Picture": "boyz.jpg",
+    "Race": "Orks",
+    "Name": "Boyz Squad",
+    "Category": "Brawler",
+    "Price": 80,
+    "Rating": 4.2
+  },
+  {
+    "Picture": "lootas.jpg",
+    "Race": "Orks",
+    "Name": "Lootas",
+    "Category": "Long Range",
+    "Price": 120,
+    "Rating": 4.0
+  },
+  {
+    "Picture": "stormboyz.jpg",
+    "Race": "Orks",
+    "Name": "Stormboyz",
+    "Category": "Assassin",
+    "Price": 90,
+    "Rating": 4.3
+  },
+  {
+    "Picture": "dire-avengers.jpg",
+    "Race": "Eldar",
+    "Name": "Dire Avengers",
+    "Category": "Long Range",
+    "Price": 110,
+    "Rating": 4.4
+  },
+  {
+    "Picture": "guardians.jpg",
+    "Race": "Eldar",
+    "Name": "Guardians",
+    "Category": "Brawler",
+    "Price": 90,
+    "Rating": 4.1
+  },
+  {
+    "Picture": "howling-banshees.jpg",
+    "Race": "Eldar",
+    "Name": "Howling Banshees",
+    "Category": "Assassin",
+    "Price": 120,
+    "Rating": 4.6
+  },
+  {
+    "Picture": "necron-warriors.jpg",
+    "Race": "Necrons",
+    "Name": "Necron Warriors",
+    "Category": "Brawler",
+    "Price": 100,
+    "Rating": 4.3
+  },
+  {
+    "Picture": "immortals.jpg",
+    "Race": "Necrons",
+    "Name": "Immortals",
+    "Category": "Long Range",
+    "Price": 130,
+    "Rating": 4.5
+  },
+  {
+    "Picture": "flayed-ones.jpg",
+    "Race": "Necrons",
+    "Name": "Flayed Ones",
+    "Category": "Assassin",
+    "Price": 120,
+    "Rating": 4.2
+  },
+  {
+    "Picture": "termagants.jpg",
+    "Race": "Tyranids",
+    "Name": "Termagants",
+    "Category": "Brawler",
+    "Price": 80,
+    "Rating": 4.2
+  },
+  {
+    "Picture": "hive-guard.jpg",
+    "Race": "Tyranids",
+    "Name": "Hive Guard",
+    "Category": "Long Range",
+    "Price": 150,
+    "Rating": 4.5
+  },
+  {
+    "Picture": "genestealers.jpg",
+    "Race": "Tyranids",
+    "Name": "Genestealers",
+    "Category": "Assassin",
+    "Price": 120,
+    "Rating": 4.3
+  }
+  {
+    "Picture": "custodian-guard.jpg",
+    "Race": "Adeptus Custodes",
+    "Name": "Custodian Guard",
+    "Category": "Brawler",
+    "Price": 120,
+    "Rating": 4.6
+  },
+  {
+    "Picture": "vertus-praetors.jpg",
+    "Race": "Adeptus Custodes",
+    "Name": "Vertus Praetors",
+    "Category": "Assassin",
+    "Price": 180,
+    "Rating": 4.8
+  },
+  {
+    "Picture": "telemon-dreadnought.jpg",
+    "Race": "Adeptus Custodes",
+    "Name": "Telemon Dreadnought",
+    "Category": "Heavy Support",
+    "Price": 250,
+    "Rating": 4.7
+  },
+  {
+    "Picture": "fire-warriors.jpg",
+    "Race": "Tau Empire",
+    "Name": "Fire Warriors",
+    "Category": "Long Range",
+    "Price": 80,
+    "Rating": 4.2
+  },
+  {
+    "Picture": "crisis-suits.jpg",
+    "Race": "Tau Empire",
+    "Name": "Crisis Suits",
+    "Category": "Assault",
+    "Price": 150,
+    "Rating": 4.5
+  },
+  {
+    "Picture": "broadsides.jpg",
+    "Race": "Tau Empire",
+    "Name": "Broadsides",
+    "Category": "Heavy Support",
+    "Price": 130,
+    "Rating": 4.3
+  }
+]
