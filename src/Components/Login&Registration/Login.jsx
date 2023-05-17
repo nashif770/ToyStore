@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
-    const handleLogin =(event)=>{
-        event.preventDefault()
-        const form = event.target;
-        const email = form.email.value;
-        const password = form.password.value;
+  const { signInUser } = useContext(AuthContext);
 
-        console.log(email, password)
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
 
-    }
+    console.log(email, password);
+
+    signInUser(email, password)
+      .then((result) => {
+        const loggedUser = result.user;
+        console.log(loggedUser);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
@@ -24,7 +36,7 @@ const Login = () => {
                 </label>
                 <input
                   type="email"
-                  name='email'
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
                 />
@@ -35,7 +47,7 @@ const Login = () => {
                 </label>
                 <input
                   type="password"
-                  name='password'
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                 />
@@ -51,7 +63,9 @@ const Login = () => {
                 <button className="btn btn-circle btn-outline m-auto">G</button>
                 <p className="text-center mt-3">
                   Don't Have an Account?
-                  <Link to="/register" className="text-red-400"> Register
+                  <Link to="/register" className="text-red-400">
+                    {" "}
+                    Register
                   </Link>
                 </p>
               </div>
