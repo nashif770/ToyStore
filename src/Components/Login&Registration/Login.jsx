@@ -2,19 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Login = () => {
+    const handleLogin =(event)=>{
+        event.preventDefault()
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        console.log(email, password)
+
+    }
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col w-1/2">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
-              <h1 className="text-5xl font-bold">Login now!</h1>
+            <form onSubmit={handleLogin} className="card-body">
+              <h1 className="text-5xl font-bold text-center">Login now!</h1>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
-                  type="text"
+                  type="email"
+                  name='email'
                   placeholder="email"
                   className="input input-bordered"
                 />
@@ -24,7 +34,8 @@ const Login = () => {
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
+                  name='password'
                   placeholder="password"
                   className="input input-bordered"
                 />
@@ -40,12 +51,11 @@ const Login = () => {
                 <button className="btn btn-circle btn-outline m-auto">G</button>
                 <p className="text-center mt-3">
                   Don't Have an Account?
-                  <Link to="/register" className="text-red-400">
-                    Register
+                  <Link to="/register" className="text-red-400"> Register
                   </Link>
                 </p>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

@@ -2,19 +2,30 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+    const handleRegister = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        const photo = form.photo.value;
+
+        console.log(name, email, password, photo)
+    }
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse w-1/2">
+        <div className="hero-content flex-col w-1/2">
           <div className="card  w-full max-w-sm shadow-2xl bg-base-100">
-            <div className="card-body">
-              <h1 className="text-5xl font-bold">Register!</h1>
+            <form onSubmit={handleRegister} className="card-body">
+              <h1 className="text-5xl font-bold text-center">Register!</h1>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Name</span>
                 </label>
                 <input
                   type="text"
+                  name='name'
                   placeholder="Name"
                   className="input input-bordered"
                 />
@@ -25,6 +36,7 @@ const Register = () => {
                 </label>
                 <input
                   type="email"
+                  name='email'
                   placeholder="Email"
                   className="input input-bordered"
                 />
@@ -35,6 +47,7 @@ const Register = () => {
                 </label>
                 <input
                   type="password"
+                  name='password'
                   placeholder="Password"
                   className="input input-bordered"
                 />
@@ -45,6 +58,7 @@ const Register = () => {
                 </label>
                 <input
                   type="text"
+                  name='photo'
                   placeholder="photo"
                   className="input input-bordered"
                 />
@@ -58,7 +72,7 @@ const Register = () => {
                   </Link>
                 </p>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
