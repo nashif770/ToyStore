@@ -3,10 +3,11 @@ import Main from "../Layout/Main";
 import Login from "../Components/Login&Registration/Login";
 import Register from "../Components/Login&Registration/Register";
 import Home from "../Components/Home/Home";
-import Orders from "../Components/Orders/Orders";
 import PrivateRoutes from "./PrivateRoutes";
 import Blogs from "../Components/Blogs/Blogs";
 import FeaturedProducts from "../Components/Home/FeaturedProducts/FeaturedProducts";
+import MyToys from "../Components/MyToys/MyToys";
+import ToyDetail from "../Components/ToyDetail/ToyDetail";
 
 const router = createBrowserRouter([
   {
@@ -20,15 +21,24 @@ const router = createBrowserRouter([
           {
             path: "/",
             element: <FeaturedProducts></FeaturedProducts>,
-            loader: () => fetch("http://localhost:5000/toys"),
+            loader: () => fetch("http://localhost:5000/featuredtoys/Space%20Marines"),
           },
         ],
       },
       {
-        path: "/orders",
+        path: "/toydetail/:id",
         element: (
           <PrivateRoutes>
-            <Orders></Orders>
+            <ToyDetail></ToyDetail>
+          </PrivateRoutes>
+        ),
+        loader: ({params})=> fetch(`http://localhost:5000/toydetail/${params.id}`)
+      },
+      {
+        path: "/mytoys",
+        element: (
+          <PrivateRoutes>
+            <MyToys></MyToys>
           </PrivateRoutes>
         ),
       },

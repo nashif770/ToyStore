@@ -1,6 +1,6 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
-import ToyCard from "../../Shared/ToyCard/ToyCard";
+import ToyCard from "../ToyCard";
 
 const FeaturedProducts = () => {
   const toys = useLoaderData();
@@ -10,7 +10,7 @@ const FeaturedProducts = () => {
   const { _id } = toys;
 
   return (
-    <div className="border">
+    <div className="border grid grid-cols-3 gap-3">
       {toys.map((toy) => (
         <ToyCard
         key={toy._id}

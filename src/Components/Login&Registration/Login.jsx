@@ -6,16 +6,16 @@ const Login = () => {
   const { user, signInUser, googleSingIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location?.state?.from?.pathname || '/';
+  const from = location?.state?.from?.pathname || "/";
 
-  const handleGoogle = () =>{
+  const handleGoogle = () => {
     googleSingIn()
-    .then((result)=> {
-      const user = result.user;
-      console.log(user)
-    })
-    .catch(error => console.log(error))
-  }
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.log(error));
+  };
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -29,7 +29,7 @@ const Login = () => {
       .then((result) => {
         const loggedUser = result.user;
         console.log(loggedUser);
-        navigate(from)
+        navigate(from);
       })
       .catch((error) => {
         console.log(error);
@@ -77,22 +77,23 @@ const Login = () => {
                     </a>
                   </label>
                 </div>
+                <button className="btn btn-primary">Login</button>
               </form>
-                <div className="form-control m-6 ">
-                  <button className="btn btn-primary">Login</button>
-                  <div className="divider">OR</div>
-                  <button onClick={handleGoogle} className="btn btn-circle btn-outline m-auto">
-                    G
-                  </button>
-                  <p className="text-center mt-3">
-                    Don't Have an Account?
-                    <Link to="/register" className="text-red-400">
-                      {" "}
-                      Register
-                    </Link>
-                  </p>
-                </div>
-
+              <div className="form-control m-6 ">
+                <div className="divider">OR</div>
+                <button
+                  onClick={handleGoogle}
+                  className="btn btn-circle btn-outline m-auto"
+                >
+                  G
+                </button>
+                <p className="text-center mt-3">
+                  Don't Have an Account?
+                  <Link to="/register" className="text-red-400">
+                    Register
+                  </Link>
+                </p>
+              </div>
             </div>
           </div>
         </div>
