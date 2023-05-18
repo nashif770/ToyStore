@@ -17,13 +17,6 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        children: [
-          {
-            path: "/",
-            element: <FeaturedProducts></FeaturedProducts>,
-            loader: () => fetch("http://localhost:5000/featuredtoys/Space%20Marines"),
-          },
-        ],
       },
       {
         path: "/toydetail/:id",

@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ToyCard = ({ toy }) => {
-  const { Picture, Name, Race, Category, Detail, Rating, _id } = toy;
+const ToyCard = ({ featuredToy }) => {
+  const { Picture, Name, Race, Category, Detail, Rating, _id } = featuredToy;
 
   return (
     <div className="border">

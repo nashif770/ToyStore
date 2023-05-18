@@ -3,6 +3,7 @@ import { AuthContext } from '../../Providers/AuthProvider';
 import { Outlet} from 'react-router-dom';
 import Banner from './Banner/Banner';
 import Gallery from './Gallery/Gallery';
+import ReactTab from './ReactTab/ReactTab';
 
 const Home = () => {
     const user = useContext(AuthContext)
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner></Banner>
             <Outlet></Outlet>
             <Gallery></Gallery>
+            <ReactTab></ReactTab>
         </div>
     );
 };
