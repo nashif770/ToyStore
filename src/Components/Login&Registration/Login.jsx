@@ -3,10 +3,19 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Login = () => {
-  const { user, signInUser } = useContext(AuthContext);
+  const { user, signInUser, googleSingIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location?.state?.from?.pathname || '/'
+  const from = location?.state?.from?.pathname || '/';
+
+  const handleGoogle = () =>{
+    googleSingIn()
+    .then((result)=> {
+      const user = result.user;
+      console.log(user)
+    })
+    .catch(error => console.log(error))
+  }
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -68,10 +77,11 @@ const Login = () => {
                     </a>
                   </label>
                 </div>
-                <div className="form-control mt-6">
+              </form>
+                <div className="form-control m-6 ">
                   <button className="btn btn-primary">Login</button>
                   <div className="divider">OR</div>
-                  <button className="btn btn-circle btn-outline m-auto">
+                  <button onClick={handleGoogle} className="btn btn-circle btn-outline m-auto">
                     G
                   </button>
                   <p className="text-center mt-3">
@@ -82,7 +92,7 @@ const Login = () => {
                     </Link>
                   </p>
                 </div>
-              </form>
+
             </div>
           </div>
         </div>
