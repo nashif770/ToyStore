@@ -10,10 +10,6 @@ const FeaturedProducts = ({props}) => {
     .then(data=> setFeaturedToys(data)) 
   },[])
 
-//   console.log(toys);
-
-  // const { _id } = toys;
-
   return (
     <div className="border grid grid-cols-3 gap-3">
       {featuredToys.map((featuredToy) => (
@@ -21,9 +17,6 @@ const FeaturedProducts = ({props}) => {
         key={featuredToy._id}
         featuredToy={featuredToy}></ToyCard>
       ))}
-      {/* {toys.map((toy) => (
-        console.log(toy._id)
-      ))} */}
     </div>
   );
 };

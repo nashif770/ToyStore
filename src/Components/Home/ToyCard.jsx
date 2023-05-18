@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ToyCard = ({ featuredToy }) => {
-  const { Picture, Name, Race, Category, Detail, Rating, _id } = featuredToy;
+const ToyCard = (props) => {
+  const { Picture, Name, Race, Category, Detail, Rating, _id } = props.featuredToy;
+  console.log(props)
 
   return (
     <div className="border">
