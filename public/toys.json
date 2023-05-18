@@ -5,7 +5,8 @@
     "Name": "Tactical Marine Squad",
     "Category": "Brawler",
     "Price": 100,
-    "Rating": 4.3
+    "Rating": 4.3,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "devastator-marine.jpg",
@@ -13,7 +14,8 @@
     "Name": "Devastator Squad",
     "Category": "Long Range",
     "Price": 150,
-    "Rating": 4.5
+    "Rating": 4.5,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "assault-marine.jpg",
@@ -21,7 +23,8 @@
     "Name": "Assault Marine Squad",
     "Category": "Assassin",
     "Price": 120,
-    "Rating": 4.1
+    "Rating": 4.1,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "boyz.jpg",
@@ -29,7 +32,8 @@
     "Name": "Boyz Squad",
     "Category": "Brawler",
     "Price": 80,
-    "Rating": 4.2
+    "Rating": 4.2,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "lootas.jpg",
@@ -37,7 +41,8 @@
     "Name": "Lootas",
     "Category": "Long Range",
     "Price": 120,
-    "Rating": 4.0
+    "Rating": 4.0,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "stormboyz.jpg",
@@ -45,7 +50,8 @@
     "Name": "Stormboyz",
     "Category": "Assassin",
     "Price": 90,
-    "Rating": 4.3
+    "Rating": 4.3,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "dire-avengers.jpg",
@@ -53,7 +59,8 @@
     "Name": "Dire Avengers",
     "Category": "Long Range",
     "Price": 110,
-    "Rating": 4.4
+    "Rating": 4.4,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "guardians.jpg",
@@ -61,7 +68,8 @@
     "Name": "Guardians",
     "Category": "Brawler",
     "Price": 90,
-    "Rating": 4.1
+    "Rating": 4.1,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "howling-banshees.jpg",
@@ -69,7 +77,8 @@
     "Name": "Howling Banshees",
     "Category": "Assassin",
     "Price": 120,
-    "Rating": 4.6
+    "Rating": 4.6,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "necron-warriors.jpg",
@@ -77,7 +86,8 @@
     "Name": "Necron Warriors",
     "Category": "Brawler",
     "Price": 100,
-    "Rating": 4.3
+    "Rating": 4.3,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "immortals.jpg",
@@ -85,7 +95,8 @@
     "Name": "Immortals",
     "Category": "Long Range",
     "Price": 130,
-    "Rating": 4.5
+    "Rating": 4.5,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "flayed-ones.jpg",
@@ -93,7 +104,8 @@
     "Name": "Flayed Ones",
     "Category": "Assassin",
     "Price": 120,
-    "Rating": 4.2
+    "Rating": 4.2,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "termagants.jpg",
@@ -101,7 +113,8 @@
     "Name": "Termagants",
     "Category": "Brawler",
     "Price": 80,
-    "Rating": 4.2
+    "Rating": 4.2,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "hive-guard.jpg",
@@ -109,7 +122,8 @@
     "Name": "Hive Guard",
     "Category": "Long Range",
     "Price": 150,
-    "Rating": 4.5
+    "Rating": 4.5,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "genestealers.jpg",
@@ -117,7 +131,8 @@
     "Name": "Genestealers",
     "Category": "Assassin",
     "Price": 120,
-    "Rating": 4.3
+    "Rating": 4.3,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "custodian-guard.jpg",
@@ -125,7 +140,8 @@
     "Name": "Custodian Guard",
     "Category": "Brawler",
     "Price": 120,
-    "Rating": 4.6
+    "Rating": 4.6,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "vertus-praetors.jpg",
@@ -133,7 +149,8 @@
     "Name": "Vertus Praetors",
     "Category": "Assassin",
     "Price": 180,
-    "Rating": 4.8
+    "Rating": 4.8,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "telemon-dreadnought.jpg",
@@ -141,7 +158,8 @@
     "Name": "Telemon Dreadnought",
     "Category": "Heavy Support",
     "Price": 250,
-    "Rating": 4.7
+    "Rating": 4.7,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "fire-warriors.jpg",
@@ -149,7 +167,8 @@
     "Name": "Fire Warriors",
     "Category": "Long Range",
     "Price": 80,
-    "Rating": 4.2
+    "Rating": 4.2,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "crisis-suits.jpg",
@@ -157,7 +176,8 @@
     "Name": "Crisis Suits",
     "Category": "Assault",
     "Price": 150,
-    "Rating": 4.5
+    "Rating": 4.5,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
     "Picture": "broadsides.jpg",
@@ -165,6 +185,7 @@
     "Name": "Broadsides",
     "Category": "Heavy Support",
     "Price": 130,
-    "Rating": 4.3
+    "Rating": 4.3,
+    "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   }
 ]
