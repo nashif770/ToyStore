@@ -20,7 +20,7 @@ const AddToy = () => {
 
     const toyToAdd ={
         SellerName: displayName,
-        SellerEmail: email,
+        sellerEmail: email,
         Picture,
         Price,
         Rating,

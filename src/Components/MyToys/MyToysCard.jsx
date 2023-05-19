@@ -5,7 +5,7 @@ const MyToysCard = ({ sellerToy }) => {
   const {
     SellerName,
     _id,
-    SellerEmail,
+    sellerEmail,
     Picture,
     Price,
     Rating,
@@ -43,7 +43,7 @@ const MyToysCard = ({ sellerToy }) => {
           </p>
           <p>
             <span className="font-bold mx-3">Seller Email:</span>
-            {SellerEmail || "www.wh40k@gmail.com"}
+            {sellerEmail || "www.wh40k@gmail.com"}
           </p>
         </div>
 

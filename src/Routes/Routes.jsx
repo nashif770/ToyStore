@@ -46,7 +46,6 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ()=> fetch(`http://localhost:5000/sellertoys`)
-        // loader: ()=> fetch(`https://40k-action-figures-server-nashif770.vercel.app/toys`)
       },
       {
         path: "/mytoys",
