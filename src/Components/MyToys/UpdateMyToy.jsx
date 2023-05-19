@@ -1,64 +1,21 @@
-import React, { useContext } from "react";
-import { AuthContext } from "../../Providers/AuthProvider";
+import React from "react";
+import { useLoaderData } from "react-router-dom";
 
-const AddToy = () => {
-    const {user} = useContext(AuthContext)
+const UpdateMyToy = () => {
+    const toysTobeUpdate = useLoaderData();
+    console.log(toysTobeUpdate)
 
-    const {displayName, email} = user;
-
-  const handleAddToy = (event) => {
-    event.preventDefault();
-
-    const form = event.target;
-    const Picture = form.photo.value;
-    const Price = form.price.value;
-    const Rating = form.rating.value;
-    const Name = form.Name.value;
-    const Category = form.category.value;
-    const Quantity = form.quantity.value;
-    const Detail = form.detail.value;
-
-    const toyToAdd ={
-        sellerName: displayName,
-        sellerEmail: email,
-        Picture,
-        Price,
-        Rating,
-        Name,
-        Category,
-        Quantity,
-        Detail
+    const handleUpdateToy =()=>{
+        event.preventDefault()
+        console.log('yp')
     }
-    console.log(toyToAdd)
-
-    fetch('http://localhost:5000/toys',{
-        method: "POST",
-        headers: {
-            'content-type':'application/json'
-        },
-        body: JSON.stringify(toyToAdd)
-
-    })
-    .then(res =>res.json())
-    .then(data=> {
-        console.log(data)
-    })
-  };
-
 
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row">
-        <div className="text-center lg:text-left w-1/3">
-          <h1 className="text-5xl font-bold">Add A Toy</h1>
-          <p className="py-6">
-            If you have any products you'd like to sell, we invite you to
-            participate. you can sell any Painted, re-painted, unpainted or even
-            3d printed figurines of Warhammer 40k.
-          </p>
-        </div>
+      <div className="hero-content flex-col lg:flex-row w-full">
         <div className="card w-full shadow-2xl bg-base-100">
-          <form onSubmit={handleAddToy} className="card-body">
+          <h1 className="text-5xl font-bold text-center">Update Toy</h1>
+          <form onSubmit={handleUpdateToy} className="card-body">
             <div className="flex flex-row">
               <div className="form-control w-full m-3">
                 <label className="label">
@@ -141,4 +98,4 @@ const AddToy = () => {
   );
 };
 
-export default AddToy;
+export default UpdateMyToy;

@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const ToyDetail = () => {
   const toyDetail = useLoaderData();
-  console.log(toyDetail);
+  console.log("cons",toyDetail);
   const { Picture, Name, Race, Category, Detail, Rating, _id } = toyDetail;
   return (
     <div className="card card-side bg-base-100 m-5 flex flex-row">

@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const MyToysCard = ({ sellerToy }) => {
+const MyToysCard = ({ sellerToy, handleDelete, handleUpdate }) => {
   const {
-    SellerName,
+    sellerName,
     _id,
     sellerEmail,
     Picture,
@@ -39,7 +39,7 @@ const MyToysCard = ({ sellerToy }) => {
           </p>
           <p>
             <span className="font-bold mx-3">Seller Name:</span>
-            {SellerName || "40k Action Figure Store"}
+            {sellerName || "40k Action Figure Store"}
           </p>
           <p>
             <span className="font-bold mx-3">Seller Email:</span>
@@ -51,14 +51,24 @@ const MyToysCard = ({ sellerToy }) => {
           <span className="font-bold mx-3">Detail:</span>
           {Detail || "TBA"}
         </p>
-        <div className="btn-group btn-group-vertical">
-          <Link to={`/sellertoys/${_id}`}>
-            <button className="btn border-none rounded-none bg-green-500 my-2">
-              View Details
+        <div className="flex flex-col">
+          <Link to={`/toydetail/${_id}`}>
+            <button className="btn border-none bg-green-500 my-2 w-full">Details</button>
+          </Link>
+          <Link to={`/updateMyToy/${_id}`}>
+            <button
+              onClick={() => handleUpdate(_id)}
+              className="btn border-none bg-yellow-500 my-2 w-full"
+            >
+              Edit
             </button>
           </Link>
-          <button className="btn border-none bg-yellow-500 my-2">Edit</button>
-          <button className="btn border-none bg-red-500 my-2">Delete</button>
+            <button
+              onClick={() => handleDelete(_id)}
+              className="btn border-none bg-red-500 my-2 w-full"
+            >
+              Delete
+            </button>
         </div>
       </div>
     </div>

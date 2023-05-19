@@ -5,7 +5,7 @@ const ToyCard = (props) => {
   const { Picture, Name, Race, Category, Detail, Rating, _id } = props.featuredToy;
 
   return (
-    <div className="border">
+    <div className="hover:bg-slate-600">
       <div className="card card-side bg-base-100 shadow-xl flex flex-col">
         <figure>
           <img
