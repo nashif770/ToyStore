@@ -12,9 +12,15 @@ const ReactTab = () => {
         <Tab>Necrons</Tab>
       </TabList>
 
-      <TabPanel>{<FeaturedProducts props={'Eldar'}></FeaturedProducts>}</TabPanel>
-      <TabPanel>{<FeaturedProducts props={'Space Marines'}></FeaturedProducts>}</TabPanel>
-      <TabPanel>{<FeaturedProducts props={'Necrons'}></FeaturedProducts>}</TabPanel>
+      <TabPanel>
+        {<FeaturedProducts props={"Eldar"}></FeaturedProducts>}
+      </TabPanel>
+      <TabPanel>
+        {<FeaturedProducts props={"Space Marines"}></FeaturedProducts>}
+      </TabPanel>
+      <TabPanel>
+        {<FeaturedProducts props={"Necrons"}></FeaturedProducts>}
+      </TabPanel>
     </Tabs>
   );
 };

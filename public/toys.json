@@ -1,6 +1,6 @@
 [
   {
-    "Picture": "tactical-marine.jpg",
+    "Picture": "https://i.ibb.co/zbgpr9s/sm3.jpg",
     "Race": "Space Marines",
     "Name": "Tactical Marine Squad",
     "Category": "Brawler",
@@ -9,7 +9,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "devastator-marine.jpg",
+    "Picture": "https://i.ibb.co/nfjzF3b/sm2.jpg",
     "Race": "Space Marines",
     "Name": "Devastator Squad",
     "Category": "Long Range",
@@ -18,7 +18,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "assault-marine.jpg",
+    "Picture": "https://i.ibb.co/TMdBLdZ/sm1.jpg",
     "Race": "Space Marines",
     "Name": "Assault Marine Squad",
     "Category": "Assassin",
@@ -27,7 +27,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "boyz.jpg",
+    "Picture": "https://i.ibb.co/m4YDrBW/ork3.jpg",
     "Race": "Orks",
     "Name": "Boyz Squad",
     "Category": "Brawler",
@@ -36,7 +36,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "lootas.jpg",
+    "Picture": "https://i.ibb.co/S0CsNMY/ork2.jpg",
     "Race": "Orks",
     "Name": "Lootas",
     "Category": "Long Range",
@@ -45,7 +45,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "stormboyz.jpg",
+    "Picture": "https://i.ibb.co/z4p7VSx/ork1.jpg",
     "Race": "Orks",
     "Name": "Stormboyz",
     "Category": "Assassin",
@@ -54,7 +54,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "dire-avengers.jpg",
+    "Picture": "https://i.ibb.co/PG7L8VW/eld3.jpg",
     "Race": "Eldar",
     "Name": "Dire Avengers",
     "Category": "Long Range",
@@ -63,7 +63,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "guardians.jpg",
+    "Picture": "https://i.ibb.co/SdqDmk8/eld2.jpg",
     "Race": "Eldar",
     "Name": "Guardians",
     "Category": "Brawler",
@@ -72,7 +72,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "howling-banshees.jpg",
+    "Picture": "https://i.ibb.co/sVYbwRJ/eld1.jpg",
     "Race": "Eldar",
     "Name": "Howling Banshees",
     "Category": "Assassin",
@@ -81,7 +81,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "necron-warriors.jpg",
+    "Picture": "https://i.ibb.co/1XZFV2h/nc3.jpg",
     "Race": "Necrons",
     "Name": "Necron Warriors",
     "Category": "Brawler",
@@ -90,7 +90,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "immortals.jpg",
+    "Picture": "https://i.ibb.co/Bchzjcn/nc2.jpg",
     "Race": "Necrons",
     "Name": "Immortals",
     "Category": "Long Range",
@@ -99,7 +99,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "flayed-ones.jpg",
+    "Picture": "https://i.ibb.co/Y2xsp89/nc1.jpg",
     "Race": "Necrons",
     "Name": "Flayed Ones",
     "Category": "Assassin",
@@ -108,7 +108,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "termagants.jpg",
+    "Picture": "https://i.ibb.co/1MQShzf/nid3.jpg",
     "Race": "Tyranids",
     "Name": "Termagants",
     "Category": "Brawler",
@@ -117,7 +117,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "hive-guard.jpg",
+    "Picture": "https://i.ibb.co/JtXNFPK/nid2.jpg",
     "Race": "Tyranids",
     "Name": "Hive Guard",
     "Category": "Long Range",
@@ -126,7 +126,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "genestealers.jpg",
+    "Picture": "https://i.ibb.co/CWDp4Fw/nid1.jpg",
     "Race": "Tyranids",
     "Name": "Genestealers",
     "Category": "Assassin",
@@ -135,7 +135,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "custodian-guard.jpg",
+    "Picture": "https://i.ibb.co/Y0QBQ90/cd3.jpg",
     "Race": "Adeptus Custodes",
     "Name": "Custodian Guard",
     "Category": "Brawler",
@@ -144,7 +144,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "vertus-praetors.jpg",
+    "Picture": "https://i.ibb.co/D8VvYNq/cd2.jpg",
     "Race": "Adeptus Custodes",
     "Name": "Vertus Praetors",
     "Category": "Assassin",
@@ -153,7 +153,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "telemon-dreadnought.jpg",
+    "Picture": "https://i.ibb.co/f4LstsT/cd1.jpg",
     "Race": "Adeptus Custodes",
     "Name": "Telemon Dreadnought",
     "Category": "Heavy Support",
@@ -162,7 +162,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "fire-warriors.jpg",
+    "Picture": "https://i.ibb.co/m5Mzf0N/tu3.jpg",
     "Race": "Tau Empire",
     "Name": "Fire Warriors",
     "Category": "Long Range",
@@ -171,7 +171,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "crisis-suits.jpg",
+    "Picture": "https://i.ibb.co/MPgw97N/tu2.jpg",
     "Race": "Tau Empire",
     "Name": "Crisis Suits",
     "Category": "Assault",
@@ -180,7 +180,7 @@
     "Detail": "This enigmatic unit possesses untapped potential, shrouded in mystery and rumored to possess formidable abilities. Its presence on the battlefield invokes both fear and curiosity, as allies and foes alike strive to uncover its true nature and purpose."
   },
   {
-    "Picture": "broadsides.jpg",
+    "Picture": "https://i.ibb.co/ZcFrfkB/tu1.jpg",
     "Race": "Tau Empire",
     "Name": "Broadsides",
     "Category": "Heavy Support",

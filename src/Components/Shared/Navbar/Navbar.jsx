@@ -29,25 +29,32 @@ const Navbar = () => {
             <Link to="/mytoys">My Toys</Link>
           </li>
           <li>
+            <Link to="/addtoy">Add Toy</Link>
+          </li>
+          <li>
             <Link to="/blogs">Blogs</Link>
           </li>
         </ul>
       </div>
-      <div className="navbar-end flex">
-        {user && (
-          <p className="btn btn-outline text-white justify-end m-auto">
-            {user.displayName}
-          </p>
-        )}
-        {!user?.displayName ? (
-          <Link to="/login" className="btn bg-white text-black">
-            Login
-          </Link>
-        ) : (
-          <Link onClick={handleLogOut} className="btn bg-white text-black">
-            Logout
-          </Link>
-        )}
+      <div className="flex">
+        <div className="m-3">
+          {user && (
+            <p className="btn hover:bg-white hover:text-black border-none bg-gray-800 text-white justify-end m-auto">
+              {user.displayName}
+            </p>
+          )}
+        </div>
+        <div className="m-3">
+          {!user?.displayName ? (
+            <Link to="/login" className="btn hover:bg-white hover:text-black border-none bg-gray-800 text-white">
+              Login
+            </Link>
+          ) : (
+            <Link onClick={handleLogOut} className="btn hover:bg-white hover:text-black border-none  bg-gray-800 text-white">
+              Logout
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

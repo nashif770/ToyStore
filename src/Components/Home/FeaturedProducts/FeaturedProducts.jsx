@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import ToyCard from "../ToyCard";
 
 const FeaturedProducts = ({props}) => {
-  console.log("test",props)
   const [featuredToys, setFeaturedToys] = useState([])
   useEffect(()=>{
     fetch(`http://localhost:5000/featuredtoys/${props}`)

@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const ToyCard = (props) => {
   const { Picture, Name, Race, Category, Detail, Rating, _id } = props.featuredToy;
-  console.log(props)
 
   return (
     <div className="border">
       <div className="card card-side bg-base-100 shadow-xl flex flex-col">
         <figure>
           <img
-            src="/images/stock/photo-1635805737707-575885ab0820.jpg"
+            className="h-52 object-contain"
+            src={Picture}
             alt="toy"
           />
         </figure>

@@ -3,21 +3,22 @@ import { Link, useLoaderData } from "react-router-dom";
 import ToyCard from "../Home/ToyCard";
 
 const AllToys = () => {
-  const allToys = useLoaderData();
+  const sellerToys = useLoaderData();
 
-  const { Picture, Name, Race, Category, Detail, Rating, _id } = allToys;
+  // const { Picture, Name, Race, Category, Detail, Rating, _id } = sellerToys;
 
-  console.log(allToys);
+  console.log(sellerToys);
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-3">
-      {allToys.map((toys) => (
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3 m-3">
+      {sellerToys.map((toys) => (
         <>
-          <div className="border-rounded gap">
+          <div className="border-rounded">
             <div className="card card-side bg-base-100 shadow-xl flex flex-col">
               <figure>
                 <img
-                  src="/images/stock/photo-1635805737707-575885ab0820.jpg"
+                className="h-52 object-contain"
+                  src={toys.Picture}
                   alt="toy"
                 />
               </figure>

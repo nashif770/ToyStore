@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 
-const ToyDetail = () => {
+const SellerToyDetail = () => {
   const toyDetail = useLoaderData();
   console.log(toyDetail);
   const { Picture, Name, Race, Category, Detail, Rating, _id } = toyDetail;
@@ -31,4 +31,4 @@ const ToyDetail = () => {
   );
 };
 
-export default ToyDetail;
+export default SellerToyDetail;

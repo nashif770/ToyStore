@@ -9,6 +9,7 @@ import FeaturedProducts from "../Components/Home/FeaturedProducts/FeaturedProduc
 import MyToys from "../Components/MyToys/MyToys";
 import ToyDetail from "../Components/ToyDetail/ToyDetail";
 import AllToys from "../Components/AllToys/AllToys";
+import AddToy from "../Components/AddToy/AddToy";
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,16 @@ const router = createBrowserRouter([
             <ToyDetail></ToyDetail>
           </PrivateRoutes>
         ),
-        loader: ({params})=> fetch(`http://localhost:5000/toydetail/${params.id}`)
+        loader: ({params})=> fetch(`https://40k-action-figures-server-nashif770.vercel.app/toydetail/${params.id}`)
+      },
+      {
+        path: "/sellertoys/:id",
+        element: (
+          <PrivateRoutes>
+            <ToyDetail></ToyDetail>
+          </PrivateRoutes>
+        ),
+        loader: ({params})=> fetch(`http://localhost:5000/sellertoys/${params.id}`)
       },
       {
         path: "/alltoys",
@@ -35,13 +45,22 @@ const router = createBrowserRouter([
             <AllToys></AllToys>
           </PrivateRoutes>
         ),
-        loader: ()=> fetch(`http://localhost:5000/toys`)
+        loader: ()=> fetch(`http://localhost:5000/sellertoys`)
+        // loader: ()=> fetch(`https://40k-action-figures-server-nashif770.vercel.app/toys`)
       },
       {
         path: "/mytoys",
         element: (
           <PrivateRoutes>
             <MyToys></MyToys>
+          </PrivateRoutes>
+        )
+      },
+      {
+        path: "/addtoy",
+        element: (
+          <PrivateRoutes>
+            <AddToy></AddToy>
           </PrivateRoutes>
         ),
       },
