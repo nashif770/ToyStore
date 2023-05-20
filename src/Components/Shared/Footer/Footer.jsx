@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useContext, useReducer } from "react";
+import { AuthContext } from "../../../Providers/AuthProvider";
 
 const Footer = () => {
+  const { user } = useContext(AuthContext);
+  {
+    /* website logo, name, copyright, some contact information, social media links, address, etc. */
+  }
+
   return (
-    <footer className="footer footer-center p-10 bg-black text-white">
-      <div className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+    <footer className="footer bg-base-300 p-10">
+      <div>
+        <img className="ps-11 h-20" src="https://i.ibb.co/YkcS8RD/Logo-Makr-4583am.png" alt="" />
+        <p className=" ps-11">
+          WH40K Toy Store
+          <br />
+          Providing Fun since 2010
+        </p>
       </div>
       <div>
+        <span className="footer-title">Social</span>
         <div className="grid grid-flow-col gap-4">
           <a>
             <svg
@@ -47,7 +56,17 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        <span className="footer-title">Company</span>
+        <a className="link link-hover">About us</a>
+        <a className="link link-hover">Contact</a>
+        <a className="link link-hover">Jobs</a>
+        <a className="link link-hover">Press kit</a>
+      </div>
+      <div>
+        <span className="footer-title">Legal</span>
+        <a className="link link-hover">Terms of use</a>
+        <a className="link link-hover">Privacy policy</a>
+        <a className="link link-hover">Cookie policy</a>
       </div>
     </footer>
   );

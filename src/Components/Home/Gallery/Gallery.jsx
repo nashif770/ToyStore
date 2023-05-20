@@ -12,7 +12,7 @@ const Gallery = () => {
     <div>
       <div className="grid grid-cols-2 md:grid-cols-4 m-auto p-3 gap-2">
         {gallery.map((picture) => (
-          <div key={picture._id} className="card w-96 bg-base-100 shadow-xl mx-2 border hover:w-80">
+          <div key={picture._id} className="card w-80 bg-base-100 shadow-xl mx-2 border hover:w-80">
             <figure>
               <img
                 className="h-52 object-contain m-auto"

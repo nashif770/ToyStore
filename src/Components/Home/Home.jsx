@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="bg-gray-200">
-      <h2 className="text-3xl font-bold text-center m-4">
+      <h2 className="text-3xl font-bold text-center p-4">
       IN THE GRIM DARKNESS OF THE FAR FUTURE,<br/> <span className="text-red-600">THERE IS ONLY WAR</span>
       </h2>
       <Banner></Banner>

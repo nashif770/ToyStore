@@ -11,6 +11,7 @@ import ToyDetail from "../Components/ToyDetail/ToyDetail";
 import AllToys from "../Components/AllToys/AllToys";
 import AddToy from "../Components/AddToy/AddToy";
 import UpdateMyToy from "../Components/MyToys/UpdateMyToy";
+import Err from "../Components/Shared/Err";
 
 const router = createBrowserRouter([
   {
@@ -89,6 +90,10 @@ const router = createBrowserRouter([
         element: <Register></Register>,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Err></Err>
   },
 ]);
 
