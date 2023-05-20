@@ -12,7 +12,7 @@ const ToyCard = (props) => {
   }
   return (
     <div className="hover:bg-slate-600">
-      <div className="card card-side bg-base-100 shadow-xl flex flex-col">
+      <div className="card card-side bg-base-100 shadow-xl flex flex-col w-3/4 m-auto">
         <figure>
           <img
             className="h-52 object-contain"
@@ -36,9 +36,6 @@ const ToyCard = (props) => {
                 View Details
               </button>
             </Link>}
-            <button className="me-4 btn btn-primary border-none bg-red-500 hover:bg-green-400">
-              Collect
-            </button>
           </div>
         </div>
       </div>

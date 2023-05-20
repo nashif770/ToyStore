@@ -24,10 +24,14 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-300">
       <div className="navbar-start">
-      <img className="ps-11 h-20" src="https://i.ibb.co/YkcS8RD/Logo-Makr-4583am.png" alt="" />
+        <img
+          className="ps-11 h-20"
+          src="https://i.ibb.co/YkcS8RD/Logo-Makr-4583am.png"
+          alt=""
+        />
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center lg:flex">
+        <ul className="menu menu-horizontal px-1 flex flex-col md:flex-row">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -38,19 +42,15 @@ const Navbar = () => {
             <Link to="/blogs">Blogs</Link>
           </li>
           {user && (
-            <div className="flex flex-row">
-              <li>
-                <Link to="/mytoys">My Toys</Link>
-              </li>
-              <li>
-                <Link to="/addtoy">Add Toy</Link>
-              </li>
-            </div>
+            <li>
+              <Link to="/mytoys">My Toys</Link>
+            </li>
           )}
-        </ul>
-      </div>
-      <div className="flex">
-        <div className="m-3">
+          {user && (
+            <li>
+              <Link to="/addtoy">Add Toy</Link>
+            </li>
+          )}
           {user &&
             (isHovered ? (
               <p
@@ -67,8 +67,6 @@ const Navbar = () => {
                 alt=""
               />
             ))}
-        </div>
-        <div className="m-3">
           {!user?.displayName ? (
             <Link
               to="/login"
@@ -84,7 +82,7 @@ const Navbar = () => {
               Logout
             </Link>
           )}
-        </div>
+        </ul>
       </div>
     </div>
   );

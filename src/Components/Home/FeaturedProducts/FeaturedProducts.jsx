@@ -10,7 +10,7 @@ const FeaturedProducts = ({props}) => {
   },[])
 
   return (
-    <div className="border grid grid-cols-3 gap-3">
+    <div className="border grid grid-cols-1 md:grid-cols-3 gap-3">
       {featuredToys.map((featuredToy) => (
         <ToyCard
         key={featuredToy._id}

@@ -10,9 +10,9 @@ const Gallery = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-2 md:grid-cols-4 m-auto p-3 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 m-auto p-3 gap-2">
         {gallery.map((picture) => (
-          <div key={picture._id} className="card w-80 bg-base-100 shadow-xl mx-2 border hover:w-80">
+          <div key={picture._id} className="card w-full bg-base-100 shadow-xl mx-2 border">
             <figure>
               <img
                 className="h-52 object-contain m-auto"

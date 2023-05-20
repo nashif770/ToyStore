@@ -28,10 +28,10 @@ const AllToys = () => {
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title">{toys.Name}</h2>
-                <p>{toys.Race}</p>
-                <p>{toys.Category}</p>
-                <p>{toys.Rating}</p>
+                <h2 className="card-title">Name: {toys.Name}</h2>
+                <p>Race: {toys.Race}</p>
+                <p>Category: {toys.Category}</p>
+                <p>Rating: {toys.Rating}</p>
                 <div className="card-actions justify-between">
                   {user ? (
                     <Link to={`/toydetail/${toys._id}`}>
@@ -41,14 +41,11 @@ const AllToys = () => {
                     </Link>
                   ) : (
                     <Link to={`/toydetail/${toys._id}`}>
-                      <button onClick={loginPrompt} className="ms-4 btn btn-primary border-none bg-gray-500 hover:bg-green-400">
+                      <button onClick={loginPrompt} className="ms-4 btn btn-primary border-none bg-gray-500 hover:bg-green-400 w-full">
                         View Details
                       </button>
                     </Link>
                   )}
-                  <button className="me-4 btn btn-primary border-none bg-red-500 hover:bg-green-400">
-                    Collect
-                  </button>
                 </div>
               </div>
             </div>

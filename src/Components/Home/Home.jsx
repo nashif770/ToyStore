@@ -5,6 +5,7 @@ import Banner from "./Banner/Banner";
 import Gallery from "./Gallery/Gallery";
 import ReactTab from "./ReactTab/ReactTab";
 import Footer from "../Shared/Footer/Footer";
+import NewsLetter from "./NewsLetter/NewsLetter";
 
 const Home = () => {
   const user = useContext(AuthContext);
@@ -18,6 +19,7 @@ const Home = () => {
       <Outlet></Outlet>
       <h2 className="text-3xl font-bold text-center m-4">Checkout Our Store</h2>
       <ReactTab></ReactTab>
+      <NewsLetter></NewsLetter>
       <h2 className="text-3xl font-bold text-center m-4">See Our Gallery</h2>
       <Gallery></Gallery>
     </div>
