@@ -1,12 +1,18 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { Outlet } from "react-router-dom";
 import Banner from "./Banner/Banner";
 import Gallery from "./Gallery/Gallery";
 import ReactTab from "./ReactTab/ReactTab";
 import NewsLetter from "./NewsLetter/NewsLetter";
+import Aos from "aos";
+import CommunityArts from "./CommunityArts/CommunityArts";
 
 const Home = () => {
+  
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const user = useContext(AuthContext);
 
   return (
@@ -16,6 +22,8 @@ const Home = () => {
       </h2>
       <Banner></Banner>
       <Outlet></Outlet>
+      <h2 className="text-3xl font-bold text-center m-4">Community Drawings</h2>
+      <CommunityArts></CommunityArts>
       <h2 className="text-3xl font-bold text-center m-4">Checkout Our Store</h2>
       <ReactTab></ReactTab>
       <NewsLetter></NewsLetter>

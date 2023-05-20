@@ -1,9 +1,10 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
   const {createUser, userUpdate} = useContext(AuthContext);
+  const {err, setErr} = useState('')
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -25,7 +26,7 @@ const Register = () => {
                 console.log('User Profile has been Updated')
             })
             .catch(error =>{
-                console.log(error)
+                setErr(error.message)
             });
         }, 500)
     })
@@ -33,6 +34,7 @@ const Register = () => {
         console.log(error)
     })
   };
+  console.log(err)
 //   -------------------------------
   return (
     <>
@@ -85,6 +87,7 @@ const Register = () => {
                   className="input input-bordered"
                 />
               </div>
+              {err && <h3>{err}</h3>}
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Register</button>
                 <p className="text-center mt-3">
