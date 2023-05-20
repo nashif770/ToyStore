@@ -2,20 +2,14 @@ import React from "react";
 import { useLoaderData } from "react-router-dom";
 
 const UpdateMyToy = () => {
-    const toysTobeUpdate = useLoaderData();
-    console.log(toysTobeUpdate)
-
-    const handleUpdateToy =()=>{
-        event.preventDefault()
-        console.log('yp')
-    }
-
+  const id = useLoaderData();
+  console.log("hello", id)
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row w-full">
         <div className="card w-full shadow-2xl bg-base-100">
           <h1 className="text-5xl font-bold text-center">Update Toy</h1>
-          <form onSubmit={handleUpdateToy} className="card-body">
+          <form className="card-body">
             <div className="flex flex-row">
               <div className="form-control w-full m-3">
                 <label className="label">

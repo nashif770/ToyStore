@@ -15,7 +15,8 @@ const MyToysCard = ({ sellerToy, handleDelete, handleUpdate }) => {
     Detail,
   } = sellerToy;
 
-  console.log(sellerToy);
+  console.log(_id)
+  // console.log(sellerToy);
 
   return (
     <div className="hero min-h-screen bg-base-200 w-full border m-3">
@@ -57,7 +58,7 @@ const MyToysCard = ({ sellerToy, handleDelete, handleUpdate }) => {
           </Link>
           <Link to={`/updateMyToy/${_id}`}>
             <button
-              onClick={() => handleUpdate(_id)}
+              // onClick={() => handleUpdate(_id)}
               className="btn border-none bg-yellow-500 my-2 w-full"
             >
               Edit

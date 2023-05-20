@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/toydetail/:id",
+        path: "toydetail/:id",
         element: (
           <PrivateRoutes>
             <ToyDetail></ToyDetail>
@@ -30,17 +30,8 @@ const router = createBrowserRouter([
         ),
         loader: ({params})=> fetch(`http://localhost:5000/toys/${params.id}`)
       },
-      // {
-      //   path: "/sellertoys/:id",
-      //   element: (
-      //     <PrivateRoutes>
-      //       <ToyDetail></ToyDetail>
-      //     </PrivateRoutes>
-      //   ),
-      //   loader: ({params})=> fetch(`http://localhost:5000/sellertoys/${params.id}`)
-      // },
       {
-        path: "/alltoys",
+        path: "alltoys",
         element: (
           <PrivateRoutes>
             <AllToys></AllToys>
@@ -49,7 +40,7 @@ const router = createBrowserRouter([
         loader: ()=> fetch(`http://localhost:5000/toys`)
       },
       {
-        path: "/mytoys",
+        path: "mytoys",
         element: (
           <PrivateRoutes>
             <MyToys></MyToys>
@@ -57,7 +48,7 @@ const router = createBrowserRouter([
         )
       },
       {
-        path: "/updateMyToy",
+        path: "updateMyToy",
         element: (
           <PrivateRoutes>
             <UpdateMyToy></UpdateMyToy>
@@ -65,7 +56,16 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/addtoy",
+        path: "updateMyToy/:id",
+        element: (
+          <PrivateRoutes>
+            <UpdateMyToy></UpdateMyToy>
+          </PrivateRoutes>
+        ),
+        loader: ({params})=> fetch(`http://localhost:5000/updatetoy/${params.id}`)
+      },
+      {
+        path: "addtoy",
         element: (
           <PrivateRoutes>
             <AddToy></AddToy>
@@ -73,7 +73,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/blogs",
+        path: "blogs",
         element: (
           <PrivateRoutes>
             <Blogs></Blogs>
@@ -81,11 +81,11 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/login",
+        path: "login",
         element: <Login></Login>,
       },
       {
-        path: "/register",
+        path: "register",
         element: <Register></Register>,
       },
     ],
