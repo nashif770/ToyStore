@@ -6,7 +6,7 @@ const MyToys = () => {
   const { user } = useContext(AuthContext);
   const [sellerToys, setSellerToys] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/sellertoys/${user?.email}`)
+    fetch(`https://40k-action-figures-server.vercel.app/sellertoys/${user?.email}`)
       .then((res) => res.json())
       .then((data) => setSellerToys(data));
   }, []);
@@ -14,7 +14,7 @@ const MyToys = () => {
   const handleDelete = (id) => {
     const prompt = confirm("Do you really want to delete this item?");
     if (prompt) {
-      fetch(`http://localhost:5000/toys/${id}`, {
+      fetch(`https://40k-action-figures-server.vercel.app/toys/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -31,7 +31,7 @@ const MyToys = () => {
 
   const handleUpdate = id =>{
     console.log(id)
-    fetch(`http://localhost:5000/updatetoy/${id}`, {
+    fetch(`https://40k-action-figures-server.vercel.app/updatetoy/${id}`, {
         method: 'PATCH',
         headers: {
             'content-type': 'application/json'

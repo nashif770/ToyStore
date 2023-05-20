@@ -4,7 +4,6 @@ import { Outlet } from "react-router-dom";
 import Banner from "./Banner/Banner";
 import Gallery from "./Gallery/Gallery";
 import ReactTab from "./ReactTab/ReactTab";
-import Footer from "../Shared/Footer/Footer";
 import NewsLetter from "./NewsLetter/NewsLetter";
 
 const Home = () => {

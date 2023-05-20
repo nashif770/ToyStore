@@ -3,7 +3,7 @@ import React from "react";
 const NewsLetter = () => {
   return (
     <div className="hero min-h-screen bg-base-300 my-3">
-        <img src="https://i.ibb.co/8717QXK/banner1.jpg" className="rounded-lg" alt=""/>
+        <img src="https://i.ibb.co/8717QXK/banner1.jpg" className="rounded-lg h-screen" alt=""/>
       <div className="hero-content text-center text-white">
         <div className="w-full">
             <p>Subscribe Now!</p>

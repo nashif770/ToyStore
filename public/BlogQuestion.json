@@ -1,0 +1,66 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "questioner_name": "John",
+      "asking_date": "2023-05-01",
+      "answer": "The capital of France is Paris.",
+      "answerer_name": "Jane",
+      "answering_date": "2023-05-02"
+    },
+    {
+      "question": "How many planets are there in our solar system?",
+      "questioner_name": "Emily",
+      "asking_date": "2023-05-05",
+      "answer": "There are eight planets in our solar system.",
+      "answerer_name": "David",
+      "answering_date": "2023-05-06"
+    },
+    {
+      "question": "What is the largest continent on Earth?",
+      "questioner_name": "Sarah",
+      "asking_date": "2023-05-10",
+      "answer": "The largest continent on Earth is Asia.",
+      "answerer_name": "Michael",
+      "answering_date": "2023-05-11"
+    },
+    {
+      "question": "Who painted the Mona Lisa?",
+      "questioner_name": "Alex",
+      "asking_date": "2023-05-15",
+      "answer": "The Mona Lisa was painted by Leonardo da Vinci.",
+      "answerer_name": "Emma",
+      "answering_date": "2023-05-16"
+    },
+    {
+      "question": "What is the boiling point of water?",
+      "questioner_name": "Daniel",
+      "asking_date": "2023-05-20",
+      "answer": "The boiling point of water is 100 degrees Celsius (212 degrees Fahrenheit).",
+      "answerer_name": "Olivia",
+      "answering_date": "2023-05-21"
+    },
+    {
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "questioner_name": "Sophia",
+      "asking_date": "2023-05-25",
+      "answer": "The play 'Romeo and Juliet' was written by William Shakespeare.",
+      "answerer_name": "Ethan",
+      "answering_date": "2023-05-26"
+    },
+    {
+      "question": "What is the formula for the area of a circle?",
+      "questioner_name": "Liam",
+      "asking_date": "2023-05-30",
+      "answer": "The formula for the area of a circle is A = πr^2, where A is the area and r is the radius of the circle.",
+      "answerer_name": "Ava",
+      "answering_date": "2023-05-31"
+    },
+    {
+      "question": "Who discovered gravity?",
+      "questioner_name": "Mia",
+      "asking_date": "2023-06-05",
+      "answer": "Gravity was discovered by Sir Isaac Newton.",
+      "answerer_name": "William",
+      "answering_date": "2023-06-06"
+    }
+  ]

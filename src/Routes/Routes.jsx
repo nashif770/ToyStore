@@ -29,7 +29,7 @@ const router = createBrowserRouter([
             <ToyDetail></ToyDetail>
           </PrivateRoutes>
         ),
-        loader: ({params})=> fetch(`http://localhost:5000/toys/${params.id}`)
+        loader: ({params})=> fetch(`https://40k-action-figures-server.vercel.app/toys/${params.id}`)
       },
       {
         path: "alltoys",
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
             <AllToys></AllToys>
           </PrivateRoutes>
         ),
-        loader: ()=> fetch(`http://localhost:5000/toys`)
+        loader: ()=> fetch(`https://40k-action-figures-server.vercel.app/toys`)
       },
       {
         path: "mytoys",
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
             <UpdateMyToy></UpdateMyToy>
           </PrivateRoutes>
         ),
-        loader: ({params})=> fetch(`http://localhost:5000/updatetoy/${params.id}`)
+        loader: ({params})=> fetch(`https://40k-action-figures-server.vercel.app/updatetoy/${params.id}`)
       },
       {
         path: "addtoy",

@@ -4,7 +4,7 @@ import ToyCard from "../ToyCard";
 const FeaturedProducts = ({props}) => {
   const [featuredToys, setFeaturedToys] = useState([])
   useEffect(()=>{
-    fetch(`http://localhost:5000/featuredtoys/${props}`)
+    fetch(`https://40k-action-figures-server.vercel.app/featuredtoys/${props}`)
     .then(res=>res.json())
     .then(data=> setFeaturedToys(data)) 
   },[])

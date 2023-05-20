@@ -31,7 +31,7 @@ const AddToy = () => {
     }
     console.log(toyToAdd)
 
-    fetch('http://localhost:5000/toys',{
+    fetch('https://40k-action-figures-server.vercel.app/toys',{
         method: "POST",
         headers: {
             'content-type':'application/json'
