@@ -2,9 +2,9 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const AddToy = () => {
-    const {user} = useContext(AuthContext)
+  const { user } = useContext(AuthContext);
 
-    const {displayName, email} = user;
+  const { displayName, email } = user;
 
   const handleAddToy = (event) => {
     event.preventDefault();
@@ -13,46 +13,46 @@ const AddToy = () => {
     const Picture = form.photo.value;
     const Price = form.price.value;
     const Rating = form.rating.value;
+    const Race = form.Race.value;
     const Name = form.Name.value;
     const Category = form.category.value;
     const Quantity = form.quantity.value;
     const Detail = form.detail.value;
 
-    const toyToAdd ={
-        sellerName: displayName,
-        sellerEmail: email,
-        Picture,
-        Price,
-        Rating,
-        Name,
-        Category,
-        Quantity,
-        Detail
-    }
-    console.log(toyToAdd)
+    const toyToAdd = {
+      sellerName: displayName,
+      sellerEmail: email,
+      Picture,
+      Price,
+      Rating,
+      Race,
+      Name,
+      Category,
+      Quantity,
+      Detail,
+    };
+    console.log(toyToAdd);
 
-    const confirm = window.confirm("You are about to add a toy, do you confirm?")
+    const confirm = window.confirm(
+      "You are about to add a toy, do you confirm?"
+    );
 
-    if(confirm){
-
-    fetch('https://40k-action-figures-server.vercel.app/toys',{
+    if (confirm) {
+      fetch("https://40k-action-figures-server.vercel.app/toys", {
         method: "POST",
         headers: {
-            'content-type':'application/json'
+          "content-type": "application/json",
         },
-        body: JSON.stringify(toyToAdd)
-
-    })
-    .then(res =>res.json())
-    .then(data=> {
-        console.log(data)
-    }) 
-    form.reset();
-  }
-  else{
-    return;
-  }
-
+        body: JSON.stringify(toyToAdd),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        });
+      form.reset();
+    } else {
+      return;
+    }
   };
 
   return (
@@ -70,6 +70,13 @@ const AddToy = () => {
           <form onSubmit={handleAddToy} className="card-body">
             <div className="flex flex-row">
               <div className="form-control w-full m-3">
+                {/* picture, toy name, seller name, seller email, price, rating, available quantity, and detail description */}
+                {/* Picture": "https://i.ibb.co/JtXNFPK/nid2.jpg",
+    "Race":
+    "Category": "Long Range",
+    "Price": 150,
+    "Rating": 4.5,
+    "Detail": */}
                 <label className="label">
                   <span className="label-text">Photo</span>
                 </label>
@@ -95,6 +102,15 @@ const AddToy = () => {
                   name="rating"
                   type="number"
                   placeholder="Rating"
+                  className="input input-bordered"
+                />
+                <label className="label">
+                  <span className="label-text">Race</span>
+                </label>
+                <input
+                  name="Race"
+                  type="text"
+                  placeholder="Race"
                   className="input input-bordered"
                 />
               </div>
@@ -127,19 +143,19 @@ const AddToy = () => {
                   placeholder="Available quantity"
                   className="input input-bordered w-full"
                 />
+                <label className="label">
+                  <span className="label-text">Toy Detail</span>
+                </label>
+                <textarea
+                  name="detail"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  className="p-3 input input-bordered "
+                  placeholder="Toy Detail"
+                ></textarea>
               </div>
             </div>
-            <label className="label">
-              <span className="label-text">Toy Detail</span>
-            </label>
-            <textarea
-              name="detail"
-              id=""
-              cols="30"
-              rows="10"
-              className="p-3 input input-bordered "
-              placeholder="Toy Detail"
-            ></textarea>
             <div className="form-control mt-6 flex justify-center">
               <button className="btn btn-primary w-1/2 m-auto">Add Toy</button>
             </div>
