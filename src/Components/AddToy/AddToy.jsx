@@ -31,6 +31,10 @@ const AddToy = () => {
     }
     console.log(toyToAdd)
 
+    const confirm = window.confirm("You are about to add a toy, do you confirm?")
+
+    if(confirm){
+
     fetch('https://40k-action-figures-server.vercel.app/toys',{
         method: "POST",
         headers: {
@@ -42,9 +46,14 @@ const AddToy = () => {
     .then(res =>res.json())
     .then(data=> {
         console.log(data)
-    })
-  };
+    }) 
+    form.reset();
+  }
+  else{
+    return;
+  }
 
+  };
 
   return (
     <div className="hero min-h-screen bg-base-200">

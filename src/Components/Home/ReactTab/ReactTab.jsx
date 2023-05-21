@@ -7,16 +7,16 @@ const ReactTab = () => {
   return (
     <Tabs>
       <TabList>
-        <Tab>Elder</Tab>
         <Tab>Space Marines</Tab>
+        <Tab>Elder</Tab>
         <Tab>Necrons</Tab>
       </TabList>
 
       <TabPanel>
-        {<FeaturedProducts props={"Eldar"}></FeaturedProducts>}
+        {<FeaturedProducts props={"Space Marines"}></FeaturedProducts>}
       </TabPanel>
       <TabPanel>
-        {<FeaturedProducts props={"Space Marines"}></FeaturedProducts>}
+        {<FeaturedProducts props={"Eldar"}></FeaturedProducts>}
       </TabPanel>
       <TabPanel>
         {<FeaturedProducts props={"Necrons"}></FeaturedProducts>}
